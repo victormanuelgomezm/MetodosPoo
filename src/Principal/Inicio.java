@@ -12,7 +12,23 @@ public class Inicio {
 
         datos.pedirDatos();
         datos.mostrarPersona();
-        datos.calcularImc();
+        String resultado=datos.calcularImc();
+        System.out.println(resultado);
+        if(resultado.equals("Pesobajo")){
+            System.out.println("usted debe alimentarse con tarrito rojo");
+        
+        }
+        else if(resultado.equals("Pesoideal")){
+            System.out.println("usted puede seguir tomando pola");
+        }
+        else if(resultado.equals("Tienesobrepeso")){
+            System.out.println("usted tiene que comprar un plan de alimentacion ");
+        }
+
+
+        
+
+
         datos.mayorEdad();
         leer.close();
     }
