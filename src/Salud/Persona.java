@@ -10,7 +10,7 @@ public class Persona {
     public String nombre,apellido,sexo,tipoDoc,resultado;
     public Double peso,pesoactual,estatura;
     // metdodos
-    public void pedirDatos(){
+    /*public void pedirDatos(){
         System.out.println("ingrese su tipo de documento");
         tipoDoc=leer.next();
         System.out.println("ingrese el numero de su documento ");
@@ -28,7 +28,7 @@ public class Persona {
         System.out.println("ingrese el sexo que usted se considera ");
         sexo=leer.next();
 
-    }
+    }*/
     public void mostrarPersona(){
         System.out.println("los datos que usted ingreso fueron\n tipo de documento :"+tipoDoc+"\n numero de cedula :"+documento+"\n nombre:"+nombre+"\n apellido: "+apellido+"\n peso:"+peso+"\n estatura : "+estatura+"\n edad : "+edad+"\n sexo : "+sexo);
         
