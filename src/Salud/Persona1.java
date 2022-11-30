@@ -2,13 +2,13 @@ package Salud;
 
 import java.util.Scanner;
 
-public class Persona {
-    Scanner leer=new Scanner(System.in);
+public class Persona1 {
+    public Scanner leer=new Scanner(System.in);
     //atributos
     
-    public int documento,edad;
-    public String nombre,apellido,sexo,tipoDoc,resultado;
-    public Double peso,pesoactual,estatura;
+    private int documento,edad;
+    private String nombre,apellido,sexo,tipoDoc,resultado;
+    private Double peso,pesoactual,estatura;
     // metdodos
     
     public void pedirDatos(){
@@ -16,9 +16,9 @@ public class Persona {
         tipoDoc=leer.next();
         System.out.println("ingrese el numero de su documento ");
         documento=leer.nextInt();
-        System.out.println("ingrese el numero de su nombre ");
+        System.out.println("ingrese  su nombre ");
         nombre=leer.next();
-        System.out.println("ingrese el numero de su apellido");
+        System.out.println("ingrese  su apellido");
         apellido=leer.next();
         System.out.println("ingrese su peso en kilogramos ");
         peso=leer.nextDouble();
@@ -30,10 +30,10 @@ public class Persona {
         sexo=leer.next();
 
     }
-    public Persona (){
+    public Persona1 (){
 
     }
-    public Persona(int documento, int edad, String nombre, String apellido, String sexo, String tipoDoc,
+    public Persona1(int documento, int edad, String nombre, String apellido, String sexo, String tipoDoc,
             String resultado, Double peso, Double pesoactual) {
         this.documento = documento;
         this.edad = edad;
@@ -43,6 +43,61 @@ public class Persona {
         this.tipoDoc = tipoDoc;
         this.resultado = resultado;
         this.peso = peso;
+        this.pesoactual = pesoactual;
+    }
+    
+    public int getDocumento() {
+        return documento;
+    }
+    public void setDocumento(int documento) {
+        this.documento = documento;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    public String getSexo() {
+        return sexo;
+    }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    public String getTipoDoc() {
+        return tipoDoc;
+    }
+    public void setTipoDoc(String tipoDoc) {
+        this.tipoDoc = tipoDoc;
+    }
+    public String getResultado() {
+        return resultado;
+    }
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }
+    public Double getPeso() {
+        return peso;
+    }
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+    public Double getPesoactual() {
+        return pesoactual;
+    }
+    public void setPesoactual(Double pesoactual) {
         this.pesoactual = pesoactual;
     }
     public void mostrarPersona(){
@@ -77,6 +132,5 @@ public class Persona {
         }
     }
 
-
-    
+     
 }
